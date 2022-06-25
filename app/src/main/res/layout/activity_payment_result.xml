@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prnotification"
+    tools:context=".PaymentResult">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/check"
+        />
+
+    <TextView
+        android:id="@+id/paymentAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/gpay_font"
+        android:text="₹ 350 paid"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paymentAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="Max Life Pharma"
+        android:fontFamily="@font/gpay_font"
+        android:textSize="17sp"
+        />
+
+    <TextView
+        android:id="@+id/upi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:textColor="#aec7f6"
+        android:text="mlp19230@upi"
+        android:fontFamily="@font/gpay_font"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:text="Done"
+        android:fontFamily="@font/gpay_font"
+        android:background="@drawable/custom_button_3"
+        android:textColor="@color/white"
+        android:onClick="done"
+        />
+
+
+</RelativeLayout>

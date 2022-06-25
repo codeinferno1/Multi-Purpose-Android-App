@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    tools:context=".FakePayment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the following details 🔥"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="25sp"
+        android:fontFamily="@font/fontnew" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:fontFamily="@font/fontnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:hint="Enter Name of Reciever"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="16" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:fontFamily="@font/fontnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText1"
+        android:hint="Enter UPI ID of Reciever"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="16" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:fontFamily="@font/fontnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:hint="Amount in Rupees (Eg.300)"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="16" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText3"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/payment_white"
+        android:paddingLeft="10dp"
+        android:background="@drawable/custom_button1"
+        android:text="Submit"
+        android:textSize="16sp"
+        android:onClick="submit"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button2"
+        android:text="Home"
+        android:drawableLeft="@drawable/home_white"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:onClick="back"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
