@@ -91,4 +91,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void qrcodescanner(View view) {
+        startActivity(new Intent(MainActivity.this,CodeScanner.class));
+    }
+
+    public void credits(View view) {
+        startActivity(new Intent(MainActivity.this,CreditsActivity.class));
+    }
 }

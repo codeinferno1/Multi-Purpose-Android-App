@@ -18,7 +18,7 @@ import java.util.Random;
 public class AppLoadingScreen extends AppCompatActivity {
     LottieAnimationView loading;
 //    String[] s = new String[]{"loading","coding","cycle","square","codingblue"};
-    int[] s = new int[]{2131755013,2131755012,2131755014,2131755015,2131755010};
+    int[] s = new int[]{R.raw.loading,R.raw.coding,R.raw.cycle,R.raw.square,R.raw.codingblue};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +30,8 @@ public class AppLoadingScreen extends AppCompatActivity {
         int no = s[n];
         loading.setAnimation(no);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-        (new Handler()).postDelayed(this::startMA, 6500);
+        (new Handler()).postDelayed(this::startMA, 1500);
+//        (new Handler()).postDelayed(this::startMA, 6500);
     }
     public void startMA(){
         Intent i = new Intent(AppLoadingScreen.this,MainActivity.class);

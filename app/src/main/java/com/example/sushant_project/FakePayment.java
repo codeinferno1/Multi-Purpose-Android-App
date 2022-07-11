@@ -17,6 +17,13 @@ public class FakePayment extends AppCompatActivity {
         name = findViewById(R.id.editText1);
         upi = findViewById(R.id.editText2);
         amount = findViewById(R.id.editText3);
+        Intent i = getIntent();
+        if (i.hasExtra("upi_id")){
+            upi.setText(i.getStringExtra("upi_id"));
+        }
+        if (i.hasExtra("upi_name")){
+            name.setText(i.getStringExtra("upi_name"));
+        }
     }
 
     public void submit(View view) {
@@ -45,5 +52,9 @@ public class FakePayment extends AppCompatActivity {
     public void back(View view) {
         Intent i = new Intent(FakePayment.this,MainActivity.class);
         startActivity(i);
+    }
+
+    public void scan_qr(View view) {
+        startActivity(new Intent(FakePayment.this,CodeScanner.class));
     }
 }
