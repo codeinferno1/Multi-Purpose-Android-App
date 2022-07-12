@@ -71,12 +71,43 @@
         android:layout_height="50dp"
         android:layout_below="@id/btn3"
         android:layout_centerHorizontal="true"
+        android:text="QR Code Scanner 📸"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button1"
+        android:fontFamily="@font/blocktastic"
+        android:textSize="18sp"
+        android:onClick="qrcodescanner"
+        />
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btn4"
+        android:layout_centerHorizontal="true"
         android:text="Other Services"
         android:layout_marginTop="20dp"
         android:textColor="@color/white"
         android:background="@drawable/custom_button1"
         android:fontFamily="@font/blocktastic"
         android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_toLeftOf="@id/icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/icons"
+        android:text="Credits❤️"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/fontnew"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="4dp"
+        android:paddingLeft="1dp"
+        android:onClick="credits"
+        android:background="#262626"
         />
 
     <LinearLayout
@@ -87,28 +118,28 @@
         android:layout_alignParentRight="true">
 
         <ImageButton
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="13dp"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:background="@drawable/yt"
             android:onClick="yt"
             />
         <ImageButton
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="13dp"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:background="@drawable/ig"
             android:onClick="ig"
             />
         <ImageButton
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="13dp"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:background="@drawable/whats"
             android:onClick="whatsapp"
             />
         <ImageButton
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="13dp"
             android:layout_marginRight="10dp"
             android:layout_width="50dp"
             android:layout_height="60dp"

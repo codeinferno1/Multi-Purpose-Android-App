@@ -40,9 +40,18 @@ public class CreditsActivity extends AppCompatActivity {
         tv.setAnimation(animation);
     }
 
+    @Override
+    public void onBackPressed() {
+        if (false){
+            super.onBackPressed();
+        }else {
+            startActivity(new Intent(CreditsActivity.this,MainActivity.class));
+            mp.stop();
+        }
+    }
+
     public void goBack(View view) {
         startActivity(new Intent(CreditsActivity.this,MainActivity.class));
-
         mp.stop();
     }
 }

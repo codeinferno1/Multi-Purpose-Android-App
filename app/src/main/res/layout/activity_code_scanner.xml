@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CodeScanner">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        />
+
+    <TextView
+        android:id="@+id/resultLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scanner_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:text="Scan any QR Code"
+        android:textSize="23dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/fontnew"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/gotobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultLink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button1"
+        android:text="Go to the Link"
+        android:textColor="@color/white"
+        android:paddingHorizontal="25dp"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
+</ScrollView>

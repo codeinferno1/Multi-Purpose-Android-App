@@ -20,15 +20,15 @@
 
     <EditText
         android:id="@+id/editText1"
-        android:fontFamily="@font/fontnew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
-        android:hint="Enter Name of Reciever"
-        android:textSize="20sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:ems="16" />
+        android:ems="16"
+        android:fontFamily="@font/fontnew"
+        android:hint="Enter Name of Reciever"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/editText2"
@@ -56,7 +56,7 @@
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="120dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/editText3"
         android:layout_marginTop="35dp"
@@ -70,9 +70,24 @@
         android:textColor="@color/white"/>
 
     <Button
-        android:layout_width="120dp"
+        android:id="@+id/scan_qr"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/submit"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/qr_code_scanner"
+        android:paddingLeft="10dp"
+        android:background="@drawable/custom_button1"
+        android:text="Scan Code"
+        android:textSize="16sp"
+        android:onClick="scan_qr"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scan_qr"
         android:layout_marginTop="35dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/custom_button2"

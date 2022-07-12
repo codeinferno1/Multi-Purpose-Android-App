@@ -86,20 +86,21 @@ public class CodeScanner extends AppCompatActivity {
                             upi_id = scanned_text.substring(i1+1,i2);
                             if (scanned_text.contains("&pn")) {
                                 int j1 = scanned_text.indexOf("&pn");
+                                j1 += 4;
                                 int j2 = 0;
                                 if (scanned_text.contains("&mc")){
                                     j2 = scanned_text.indexOf("&mc");
                                 }
-
                                 if(j2!=0){
-                                    upi_name = scanned_text.substring(j1+4,j2);
+                                    upi_name = scanned_text.substring(j1,j2);
                                 }else{
-                                    upi_name = scanned_text.substring(j1+4);
+                                    upi_name = scanned_text.substring(j1);
                                 }
 
 //                                if (scanned_text.contains("%20")){
                                     upi_name = upi_name.replace("%20"," ");
-                                    upi_name = scanned_text.substring(j1+1,j2);
+//                                    upi_name = upi_name.replace("%2O"," ");
+//                                    upi_name = scanned_text.substring(j1+1,j2);
 //                                }
 
                             }
